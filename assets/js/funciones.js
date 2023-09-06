@@ -1,4 +1,4 @@
-//FUNCIONES
+//FUNCIONES TRADICIONALES
 /* 
     - Una funcion es un bloque de codigo que realiza una tarea especifica, cuando se le llama
     - Cada funcion de javascript es un objeto funcion
