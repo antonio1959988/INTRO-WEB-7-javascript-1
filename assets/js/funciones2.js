@@ -1,5 +1,5 @@
 //Funciones
-//Programa para hacer limonada
+//3. Programa para hacer limonada
 function exprimirLimones(cantidad){
     console.log("Exprimiendo " + cantidad + " Limones.");
     let jugoExtraido= cantidad * 10; //Considerando obtener 10ml de jugo por cada limon
@@ -7,24 +7,24 @@ function exprimirLimones(cantidad){
     return jugoExtraido; //return
 }
 
-//Funcion para mezclar el jugo con agua y azucar
+//4. Funcion para mezclar el jugo con agua y azucar
 function mezclarJugoDeLimon(cantidadDeJugo, cantidadDeAgua, cantidadDeAzucar){
     console.log("Mezclando " + cantidadDeJugo + "ml de jugo de limon con " + cantidadDeAgua + "ml de agua y " + cantidadDeAzucar + "gramos de azucar");
 }
 
-//Funcion para servir la limonada
+//5. Funcion para servir la limonada
 function servirLimonada(){
     console.log("Sirviendo la limonada en un vaso");
     vasoDeLimonada = true;
 }
 
-//Funcion principal que prepare mi limonada
+//2. Funcion principal que prepare mi limonada
 function prepararLimonada(cantidadDeLimon){
     let jugoDeLimon = exprimirLimones(cantidadDeLimon);
     mezclarJugoDeLimon(jugoDeLimon, 200, 10); //Cantidades ficticias de jugo de limon, de agua y de azucar
     servirLimonada();
 }
 
-//Llamar a la funcion principal para preparar limonada
+//1. Llamar a la funcion principal para preparar limonada
 var vasoDeLimonada = false;
 prepararLimonada(5);//llamando al programa

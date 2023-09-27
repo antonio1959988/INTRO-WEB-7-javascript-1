@@ -1,4 +1,4 @@
-//Declaración de funcion que indica el tiempo de lavado de manos y guantes a utilizar
+//3. Declaración de funcion que indica el tiempo de lavado de manos y guantes a utilizar
 function preparacionInicial(tiempoSeg,guantes){
     console.log("Asegurando que el área de esterilización esté limpia y ordenada.")
 
@@ -11,7 +11,7 @@ function preparacionInicial(tiempoSeg,guantes){
     console.log("Estado actual en area de esterilizacion: " + areaEsterilizacion);
 }
 
-//Declaración de función que limpia determinada cantidad de instrumentos. Esta función retorna su mismo valor para ser asignado a la variable instrumentosListos
+//4. Declaración de función que limpia determinada cantidad de instrumentos. Esta función retorna su mismo valor para ser asignado a la variable instrumentosListos
 function limpiarInstrumentos(instrumentos){
     console.log("Se ha declarado que " + instrumentos + " instrumento(s) requiere(n) de limpieza antes de esterilizacion.");
 
@@ -23,7 +23,7 @@ function limpiarInstrumentos(instrumentos){
     return instrumentos;
 }
 
-//Declaracion de proceso de esterilización asignandole temperatura, presion y tiempo
+//5. Declaracion de proceso de esterilización asignandole temperatura, presion y tiempo
 function procesoEsterilizacion(temperatura, presiom, tiempo){
     console.log("Colocando los instrumentos limpios y secos en una bolsa de esterilización adecuada");
     console.log("Colocando las bolsas en el autoclave");
@@ -35,7 +35,7 @@ function procesoEsterilizacion(temperatura, presiom, tiempo){
     console.log("Estado actual del proceso de esterilizacion: " + esterilizacionCompletada);
 }
 
-//Declaracion de funcion que inicia el protocolo, esta reune las tres funciones anteriores
+//2. Declaracion de funcion que inicia el protocolo, esta reune las tres funciones anteriores
 function iniciarProtocolo(instrumentosIniciales){
     console.log("Iniciando protocolo.");
     preparacionInicial(20,2); //Tiempo en segundos del lavado de manos, cantidad de guantes a utilizar
@@ -45,7 +45,7 @@ function iniciarProtocolo(instrumentosIniciales){
 
 }
 
-//Asignacion y muestra del status de cada procedimiento (antes de esterilizar)
+//1. Asignacion y muestra del status de cada procedimiento (antes de esterilizar)
 var areaEsterilizacion = false;
 console.log("Estado inicial area de esterilización: " + areaEsterilizacion);
 
